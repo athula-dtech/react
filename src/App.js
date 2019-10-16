@@ -4,15 +4,19 @@ import {BrowserRouter as Router,Switch,Route,Link} from 'react-router-dom';
 import Create from './components/create.component';
 import Edit from './components/edit.component';
 import Index from './components/index.component';
-
+ /*
  class App extends Component {
    
    render() {
       return(
-        <Router>
+         <div></div>
+
+
+      
+       <Router>
            <div className='container'>
               <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-              <Link to={'/'} className='navbar-brand'>React Crud</Link>
+              <Link to={'/'} className='navbar-brand'>React </Link>
               <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                  <ul className='navbar-nav mr-auto'>
                     <li className='nav-item'>
@@ -21,27 +25,34 @@ import Index from './components/index.component';
                     <li className='nav-item'>
                        <Link to={'/create'} className='nav-link'>Create</Link>
                     </li>
-                    <li className='nav-item'>
+                    <li className='nav-item  '>
                        <Link to={'/edit'} className='nav-link'>Edit</Link>
                     </li>
                     <li className='nav-item'>
                        <Link to={'/index'} className='nav-link'>Index</Link>
                     </li>
+             
                  </ul>
               </div>
               </nav><br/>
-             <h2>Welcome to React Crud</h2><br/>
              <Switch>
-                <Route  exact path='/create'   component={Create}/>
-                <Route  path='/edit/:id'  component={Edit}/>
-                <Route  path='/index' component={Index}/>
+                <Route  exact path='/create' component={Create}/>
+                <Route  path='/edit/:id' component={Edit}/>
+                <Route  path='/index'  component={Index}/>
              </Switch>
-           </div>
-        </Router>
+             </div>
+        </Router>  
       );
    }
    
  }
+   export default App;
+ */
+
+ const person = () => {
+    return  <h1>called person method</h1>
+ }
+ export default person;
  
- export default App;
+
 
